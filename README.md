@@ -1,40 +1,14 @@
 # CyberSecurity-TASK-1
-# Cybersecurity Task 1: Port Scanning with Nmap #
-
-## Tools Used:
-- WINDOW 10
-- CMD
-- NMAP
-
-## My Local IP Info:
-- IP: 192.168.1.39
-- Subnet: 255.255.255.0
-- Scanned range: 192.168.1.0/24
-
-## Nmap Command Used: 
-              TARGET:192.168.1.39                   PROFILE:  Intense scan
-             COMMAND:NMAP -sS 192.168.1.39
-             
-## Summary:
-- Found 5 devices online.
-- Discovered open ports: 135, 139, 445, 902, 912
-- Used Wireshark to verify SYN packets.
-
-## Risks:
-- Open RDP (3389) port is dangerous if not protected.
- Open RDP (Remote Desktop Protocol) – Port 3389
- Dangerous if not protected.
- This port is not listed in your summary but commonly targeted by attackers. If you meant to refer to  RDP, confirm whether port 3389 is open.
- Mitigation: Use firewalls, Network Level Authentication (NLA), and strong credentials or VPN access.
-
-- SSH (22) must use strong passwords.
-  SSH (Secure Shell) – Port 22
-  Must use strong passwords or key-based authentication.
-  This port is not in your open port list, but if SSH is used, ensure proper security measures:
-  Disable password login if possible (use SSH keys).
-  Restrict login access (e.g., only allow specific IPs).
-  Use fail2ban or similar intrusion prevention tools.
-
-## Files:
-- scan_results.txt: Nmap output
-- Screenshots included
+ Task 1:  Scan Your Local Network for Open Ports
+ Objective: Learn to discover open ports on devices in your local network to
+ understand network exposure.
+ Tools: Nmap (free), Wireshark (optional)
+ Hints/Mini Guide:
+ 1.Insta l Nmap from official website.
+ 2.Find your local IP range (e.g., 192.168.1.0/24).
+ 3.Run: nmap -sS 192.168.1.0/24 to perform TCP SYN scan.
+ 4.Note down IP addresses and open ports found.
+ 5.Optiona ly analyze packet capture with Wireshark.
+ 6.Research common services running on those ports.
+ 7.Identify potential security risks from open ports.
+ 8.Save scan results as a text or HTML file.
